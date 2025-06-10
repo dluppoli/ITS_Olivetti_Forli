@@ -2,3 +2,5 @@ alfa
 beta
 root
 gamma
+user
+guest
