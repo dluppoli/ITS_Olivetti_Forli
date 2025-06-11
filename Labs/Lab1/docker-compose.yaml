@@ -18,6 +18,7 @@ services:
     environment:
       FTP_USER_NAME: user
       FTP_USER_PASS: passw0rd
+      FTP_USER_HOME: /home/user
   samba:
     build: ./samba
     container_name: samba
