@@ -20,7 +20,7 @@ services:
       FTP_USER_PASS: passw0rd
       FTP_USER_HOME: /home/user
   samba:
-    build: ./samba
+    image: dluppoli/samba:4.6.3
     container_name: samba
     tty: true
     volumes:
@@ -28,6 +28,13 @@ services:
     networks:
       vulnlab-net: 
         ipv4_address: 172.30.0.11      
+  appweb:
+    image: dluppoli/provapraticafinale:2
+    container_name: appweb
+    tty: true
+    networks:
+      vulnlab-net: 
+        ipv4_address: 172.30.0.12
   joomla:
     image: vulhub/joomla:3.4.5
     depends_on:
