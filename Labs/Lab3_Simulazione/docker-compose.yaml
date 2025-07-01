@@ -10,7 +10,7 @@ volumes:
 
 services:
   machine:
-    image: dluppoli/simulazione:1.1
+    image: dluppoli/simulazione:1.2
     container_name: machine
     networks:
       vulnlab-net:
