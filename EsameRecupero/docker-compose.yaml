@@ -1,0 +1,14 @@
+networks:
+  privafinale2-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.33.0.0/24
+
+services:
+  machine:
+    image: dluppoli/provafinalecyber:2.0
+    container_name: machinepf2
+    networks:
+      privafinale2-net:
+        ipv4_address: 172.33.0.12
